@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/buttonbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0079D6">
+
+        <Button
+            android:id="@+id/suzukiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="companyClick"
+            android:text="Suzuki"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bmwButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="companyClick"
+            android:textColor="#FFFFFF"
+            android:text="BMW"/>
+
+        <Button
+            android:id="@+id/hondaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="companyClick"
+            android:textColor="#FFFFFF"
+            android:text="Honda"/>
+
+        <Button
+            android:id="@+id/ferrariButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:onClick="companyClick"
+            android:textColor="#FFFFFF"
+            android:text="Ferrari" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bodyfragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:name="com.example.fragmentsold.ListFragment"
+            tools:layout="@layout/listfragment"/>
+
+        <FrameLayout
+            android:id="@+id/frame2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.fragmentsold.DetailsFragment"
+            tools:layout="@layout/detailsfragment"/>
+
+
+    </LinearLayout>
+</LinearLayout>
